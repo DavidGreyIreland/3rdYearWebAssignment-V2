@@ -1,0 +1,91 @@
+body {
+	background: #CCFFCC;
+}
+
+header {
+    text-align: center;
+}
+
+header img {
+    border: .5rem solid black;
+}
+
+/* ------- table contents --------- */
+th, td, tr {
+    border: solid black 0.1rem
+}
+
+td {
+    text-align: center;
+    background-color: white;
+    min-width: 6rem;
+}
+
+th {
+    background-color: darkgreen;
+    color: white;
+}
+
+#baseContainer {
+    min-height: 750px;
+}
+/****************************************************************/
+/************************** index container *********************/
+
+#indexContainer {
+    margin-left: 30%;
+}
+
+#indexContainer h1{
+    margin-left: 15%;
+}
+
+/****************************************************************/
+/************************** login container *********************/
+
+.loginContainer {
+    margin-left: 38%;
+}
+
+.loginContainer h1{
+    margin-left: 6%;
+}
+
+.loginContainer #password {
+    padding-right: 4px;
+}
+
+.loginContainer input[type=submit] {
+    margin-left: 8rem;
+}
+
+/****************************************************************/
+/************************** adminLogin container *********************/
+
+#adminStudentListContainer table {
+    margin-left: 13.5%;
+}
+
+#adminStudentListContainer h1{
+     margin-left: 41%;
+ }
+
+#adminStudentListContainer h2{
+    margin-left: 48%;
+}
+
+#adminStudentListContainer  th, #adminStudentListContainer  td, #adminStudentListContainer  input[type=text] {
+    width: 8rem;
+    text-align: center;
+}
+
+/****************************************************************/
+/************************** adminAttendance container *********************/
+
+#adminAttendanceMain h1{
+    margin-left: 46%;
+}
+
+#adminAttendanceMain table{
+    margin-left: 41%;
+}
