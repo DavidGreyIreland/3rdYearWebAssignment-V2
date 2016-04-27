@@ -2,8 +2,8 @@
 require_once __DIR__ . '/../vendor/autoload.php';
 require_once __DIR__ . '/../app/configDatabase.php';
 
-use Itb\User;
-use Itb\Student;
+use Itb\Model\User;
+use Itb\Model\Student;
 
 /*define('DB_HOST','localhost');
 define('DB_USER', 'fred');

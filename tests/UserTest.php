@@ -69,7 +69,7 @@ class UserTest extends \PHPUnit_Framework_TestCase
         $this->assertEquals($boolean, $boolean2);
     }
 
-    public function testCanFindMatchingUsernameAndPassword()
+/*    public function testCanFindMatchingUsernameAndPassword()
     {
         $user = new User();
         $user->setPassword("1234");
@@ -91,5 +91,5 @@ class UserTest extends \PHPUnit_Framework_TestCase
         $result = $user->getRole();
 
         $this->assertEquals($expectedResult, $result);
-    }
+    }*/
 }

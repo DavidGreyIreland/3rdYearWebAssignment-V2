@@ -1,0 +1,35 @@
+<?xml version="1.0" ?>
+<dataset name="3rdyearassignment">
+    <!-- Table users -->
+    <table name="users">
+        <column name="id">id</column>
+        <column name="username">username</column>
+        <column name="password">password</column>
+        <column name="role">role</column>
+
+        <row name="users">
+            <value name="id">1</value>
+            <value name="username">david</value>
+            <value name="password">1234</value>
+            <value name="role">1</value>
+        </row>
+        <row name="users">
+            <value name="id">2</value>
+            <value name="username">john</value>
+            <value name="password">2345</value>
+            <value name="role">1</value>
+        </row>
+        <row name="users">
+            <value name="id">3</value>
+            <value name="username">anthony</value>
+            <value name="password">3456</value>
+            <value name="role">1</value>
+        </row>
+        <row name="users">
+            <value name="id">4</value>
+            <value name="username">brandon</value>
+            <value name="password">4567</value>
+            <value name="role">1</value>
+        </row>
+    </table>
+</dataset>

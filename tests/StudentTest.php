@@ -142,4 +142,19 @@ class StudentTest extends \PHPUnit_Framework_TestCase
 
         $this->assertEquals($expectedResult, $result);
     }
+
+
+    /**
+     * testing required status
+     */
+    public function testGetOneByUsername()
+    {
+        $student = new student();
+        $student->setRequiredStatus("active");
+
+        $expectedResult = "active";
+        $result = $student->getRequiredStatus();
+
+        $this->assertEquals($expectedResult, $result);
+    }
 }
