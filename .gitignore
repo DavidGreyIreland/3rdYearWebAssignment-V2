@@ -3,3 +3,5 @@ vendor
 *.phar
 tests/coverage
 src/documentation
+database.Xml
+UserDBTest.php

@@ -8,6 +8,8 @@
 
 namespace Itb\Tests;
 use Itb\Model\User;
+use Mattsmithdev\PdoCrud\DatabaseTable;
+
 class UserDBTest extends \PHPUnit_Extensions_Database_TestCase
 {
     public function getConnection()
@@ -42,4 +44,49 @@ class UserDBTest extends \PHPUnit_Extensions_Database_TestCase
         // assert
         $this->assertEquals($expectedResult, $this->getConnection()->getRowCount('users'));
     }
+
+
+    public function testRowCountAfterDeleteOne()
+    {
+
+        // arrange
+        $numRowsAtStart = 4;
+        $this->assertEquals($numRowsAtStart, $this->getConnection()->getRowCount('users'), 'Pre-Condition');
+        $expectedResult = 3;
+
+        // act
+        User::delete(1);
+        $result = $this->getConnection()->getRowCount('users');
+
+        // assert
+        $this->assertNotNull($expectedResult, $result);
+    }
+    
+
+/*    public function testGetAllAsObjectArray()
+    {
+        // arrange
+        $user1 = new User();
+        $user1->setId(1);
+        $user1->setUsername('david');
+        $user1->setPassword(1234);
+        $user1->setRole(1);
+
+        //$user1->getPassword();
+        //$user2 = password_hash($pass, PASSWORD_DEFAULT);
+        //$user1->setPassword($user2);
+        //$user1->setRole(1);
+
+
+        $expectedResult = [];
+        $expectedResult[] = $user1;
+
+        // act
+        $result = User::getAll();
+        //$previsionalName = User1::getOneByUsername("david");
+        //$hashedStoredPassword = $previsionalName->getPassword();
+
+        // assert
+        $this->assertEquals($expectedResult, $result);
+    }*/
 } 

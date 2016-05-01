@@ -5,11 +5,6 @@ require_once __DIR__ . '/../app/configDatabase.php';
 use Itb\Model\User;
 use Itb\Model\Student;
 
-/*define('DB_HOST','localhost');
-define('DB_USER', 'fred');
-define('DB_PASS', 'smith');
-define('DB_NAME', 'itb');*/
-
 $student1 = new Student();
 $student1->setFirstName('david');
 $student1->setSurname('Grey');
